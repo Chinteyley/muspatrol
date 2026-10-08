@@ -1,0 +1,194 @@
+{
+  "labels": {
+    "bucket": {
+      "en": "plastic bucket / basin",
+      "km": "ធុង / អាង"
+    },
+    "saucer": {
+      "en": "flower-pot saucer",
+      "km": "ចាន ក្រោម ផើង"
+    },
+    "tire": {
+      "en": "old tire",
+      "km": "សំបកកង់ ចាស់"
+    },
+    "discard": {
+      "en": "shell / cup / bottle",
+      "km": "សំបកដូង / ពែង / ដប"
+    },
+    "jar": {
+      "en": "water jar / barrel",
+      "km": "ពាង / ធុងធំ"
+    },
+    "ant_trap": {
+      "en": "ant-trap bowl",
+      "km": "ចាន ការពារ ស្រមោច"
+    },
+    "shrine": {
+      "en": "spirit-house water",
+      "km": "ទឹក នៅ ផ្ទះទេព"
+    },
+    "pet_bowl": {
+      "en": "pet water bowl",
+      "km": "ចានទឹក សត្វ"
+    },
+    "gutter": {
+      "en": "gutter / tarp puddle",
+      "km": "ទឹក នៅ រនាំង / បាត"
+    },
+    "drain": {
+      "en": "roadside drain",
+      "km": "លូ ផ្លូវ"
+    },
+    "grass": {
+      "en": "dry ground / grass",
+      "km": "ស្មៅ / ដី ស្ងួត"
+    }
+  },
+  "actions": {
+    "TIP": {
+      "en": "TIP",
+      "km": "ចាក់"
+    },
+    "SCRUB": {
+      "en": "SCRUB",
+      "km": "កកិត"
+    },
+    "COVER": {
+      "en": "COVER",
+      "km": "គ្រប"
+    },
+    "TOSS": {
+      "en": "TOSS",
+      "km": "បោះ"
+    },
+    "CHANGE": {
+      "en": "CHANGE",
+      "km": "ប្ដូរ"
+    },
+    "REPORT": {
+      "en": "REPORT",
+      "km": "រាយការណ៍"
+    },
+    "NONE": {
+      "en": "LOOK",
+      "km": "មើល"
+    }
+  },
+  "orders": {
+    "bucket_wet": {
+      "en": "Eggs stick to the walls. Tip it, scrub, store upside-down.",
+      "km": "ពង ជាប់ ជញ្ជាំង។ ចាក់ចោល កកិត ហើយ ដាក់ផ្កាប់។"
+    },
+    "bucket_dry": {
+      "en": "Scrub the dry film, then store it upside-down.",
+      "km": "កកិត ធុង ស្ងួត ហើយ ដាក់ផ្កាប់។"
+    },
+    "saucer_wet": {
+      "en": "Empty it, or fill the saucer with sand.",
+      "km": "ចាក់ទឹកចោល ឬ ដាក់ខ្សាច់ ក្នូងចាន។"
+    },
+    "saucer_dry": {
+      "en": "Nice — keep it dry, or fill it with sand.",
+      "km": "ល្អ។ រក្សាឱយ់ ស្ងួត ឬ ដាក់ខ្សាច់។"
+    },
+    "tire": {
+      "en": "Tires are mosquito hotels. Recycle it, or drill drain holes.",
+      "km": "សំបកកង់ ជា ផ្ទះមូស។ បោះចោល ឬ ខួងរន្ធលូ។"
+    },
+    "discard": {
+      "en": "Bin it. Shells, cups and bottles are one-rain nurseries.",
+      "km": "បោះចោល។ សំបកដូង ពែង និង ដប ជាកន្លែងពងមូស។"
+    },
+    "jar_wet": {
+      "en": "Lid or mosquito net. Scrub the rim once a week.",
+      "km": "គ្របគម្រប ឬ មុំ។ កកិត មាត់ពាង រៀងរាល់ សប្ដាហ៍។"
+    },
+    "jar_dry": {
+      "en": "Keep a lid on it even when it's low.",
+      "km": "គ្របគម្របទុក ទោះទឹកតិច ក៏ដោយ។"
+    },
+    "ant_trap": {
+      "en": "Change this water every 3 days — classic kitchen detail.",
+      "km": "ប្ដូរទឹក រៀងរាល់ ៣ ថ្ងៃ។"
+    },
+    "shrine": {
+      "en": "Be respectful: change the water, don't toss the offerings.",
+      "km": "សូម គោរភ៖ ប្ដូរទឹក កុំចោល តង្វាយ។"
+    },
+    "pet_bowl": {
+      "en": "Change the water daily. Your dog will not mind.",
+      "km": "ប្ដូរទឹក រាល់ថ្ងៃ។"
+    },
+    "gutter": {
+      "en": "Clear the puddle. Gutters and tarps love a slow leak.",
+      "km": "សម្អាត ទឹកជាំ។"
+    },
+    "drain": {
+      "en": "Public water. Tell the sangkat if it sits. Low priority for Aedes.",
+      "km": "ទឹក សាធារណៈ។ ប្រាប់ សង្កាត់ បើ វ ជាំយូរ។"
+    },
+    "grass": {
+      "en": "Nice. Touch that grass.",
+      "km": "ល្អ។ ប៉ះ ស្មៅ ទៅ។"
+    }
+  },
+  "ui": {
+    "appName": {
+      "en": "MusPatrol",
+      "km": "មូស Patrol"
+    },
+    "tagline": {
+      "en": "10 minutes after the rain. Flip the pots. Pocket the phone.",
+      "km": "១០ នាទី ក្រោយ ភ្លៀង។ ចាក់ធុង។"
+    },
+    "startPatrol": {
+      "en": "Start patrol",
+      "km": "ចាប់ ផ្ដើម ល្បាត"
+    },
+    "judgeMode": {
+      "en": "Try with sample photos",
+      "km": "សាក ល្បង រូបភាព"
+    },
+    "waterQ": {
+      "en": "Water inside?",
+      "km": "មានទឹក ក្នូង នេះ?"
+    },
+    "waterYes": {
+      "en": "Yes, water",
+      "km": "មាន ទឹក"
+    },
+    "waterNo": {
+      "en": "No water",
+      "km": "គ្មាន ទឹក"
+    },
+    "done": {
+      "en": "Done",
+      "km": "រួចរាល់"
+    },
+    "finish": {
+      "en": "Finish patrol",
+      "km": "បញ្ចប់ ល្បាត"
+    },
+    "snap": {
+      "en": "Snap a container",
+      "km": "ថត ធុង"
+    },
+    "pickTop": {
+      "en": "Which one is it?",
+      "km": "មួយណា?"
+    },
+    "patrolWindow": {
+      "en": "Patrol window",
+      "km": "ពេល ល្បាត"
+    },
+    "about": {
+      "en": "About",
+      "km": "អំពី"
+    },
+    "neighbour": {
+      "en": "Neighbour note",
+      "km": "សារ បង អ្នកជិត"
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "n": 10,
+  "top1": 8,
+  "top3": 10,
+  "top1Acc": 0.8,
+  "top3Acc": 1,
+  "meanMs": 43,
+  "device": "node cpu, CLIP q4f16",
+  "rows": [
+    {
+      "id": "bucket",
+      "expected": "bucket",
+      "top1": "bucket",
+      "top3": [
+        "bucket",
+        "jar",
+        "pet_bowl"
+      ],
+      "scores": [
+        0.309,
+        0.299,
+        0.274
+      ],
+      "ms": 52
+    },
+    {
+      "id": "basin",
+      "expected": "bucket",
+      "top1": "pet_bowl",
+      "top3": [
+        "pet_bowl",
+        "ant_trap",
+        "bucket"
+      ],
+      "scores": [
+        0.309,
+        0.301,
+        0.285
+      ],
+      "ms": 55
+    },
+    {
+      "id": "pot",
+      "expected": "saucer",
+      "top1": "saucer",
+      "top3": [
+        "saucer",
+        "jar",
+        "bucket"
+      ],
+      "scores": [
+        0.234,
+        0.197,
+        0.192
+      ],
+      "ms": 52
+    },
+    {
+      "id": "tire",
+      "expected": "tire",
+      "top1": "tire",
+      "top3": [
+        "tire",
+        "saucer",
+        "drain"
+      ],
+      "scores": [
+        0.294,
+        0.253,
+        0.233
+      ],
+      "ms": 43
+    },
+    {
+      "id": "coconut",
+      "expected": "discard",
+      "top1": "discard",
+      "top3": [
+        "discard",
+        "ant_trap",
+        "saucer"
+      ],
+      "scores": [
+        0.31,
+        0.246,
+        0.243
+      ],
+      "ms": 36
+    },
+    {
+      "id": "bottle",
+      "expected": "discard",
+      "top1": "discard",
+      "top3": [
+        "discard",
+        "ant_trap",
+        "gutter"
+      ],
+      "scores": [
+        0.274,
+        0.238,
+        0.221
+      ],
+      "ms": 33
+    },
+    {
+      "id": "jar",
+      "expected": "jar",
+      "top1": "jar",
+      "top3": [
+        "jar",
+        "saucer",
+        "discard"
+      ],
+      "scores": [
+        0.289,
+        0.231,
+        0.23
+      ],
+      "ms": 33
+    },
+    {
+      "id": "barrel",
+      "expected": "jar",
+      "top1": "jar",
+      "top3": [
+        "jar",
+        "grass",
+        "drain"
+      ],
+      "scores": [
+        0.256,
+        0.23,
+        0.229
+      ],
+      "ms": 42
+    },
+    {
+      "id": "bowl",
+      "expected": "pet_bowl",
+      "top1": "bucket",
+      "top3": [
+        "bucket",
+        "pet_bowl",
+        "ant_trap"
+      ],
+      "scores": [
+        0.318,
+        0.315,
+        0.302
+      ],
+      "ms": 38
+    },
+    {
+      "id": "grass",
+      "expected": "grass",
+      "top1": "grass",
+      "top3": [
+        "grass",
+        "saucer",
+        "jar"
+      ],
+      "scores": [
+        0.27,
+        0.26,
+        0.243
+      ],
+      "ms": 41
+    }
+  ]
+}

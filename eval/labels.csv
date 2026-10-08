@@ -1,0 +1,11 @@
+file,expected,water,source
+bucket.jpg,bucket,yes,commons
+basin.jpg,bucket,no,commons
+pot.jpg,saucer,yes,commons
+tire.jpg,tire,yes,commons
+coconut.jpg,discard,yes,commons
+bottle.jpg,discard,no,commons
+jar.jpg,jar,yes,commons
+barrel.jpg,jar,yes,commons
+bowl.jpg,pet_bowl,yes,commons
+grass.jpg,grass,no,commons
