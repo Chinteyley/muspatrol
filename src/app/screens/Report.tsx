@@ -96,7 +96,7 @@ export function Report() {
       <section className="card">
         <h2>Gemma 4 E2B (optional)</h2>
         <p className="muted">
-          Apache-2.0, on-device, ~1.91 GB. Needs WebGPU. The model never decides the
+          Apache-2.0, on-device, ~2.0 GB download. Needs WebGPU. The model never decides the
           health action — if it invents a tire, we throw the text away.
         </p>
         {llm.state === "unsupported" || llm.state === "error" ? (

@@ -5,7 +5,7 @@ import type { LlmStatus, PatrolItem, ReportResult } from "../types";
 
 export const GEMMA4_TASK_URL =
   "https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm/resolve/main/gemma-4-E2B-it-web.task";
-export const GEMMA4_SIZE_GB = 1.91;
+export const GEMMA4_SIZE_GB = 2.0;
 export const MEDIAPIPE_WASM =
   "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-genai@0.10.29/wasm";
 
