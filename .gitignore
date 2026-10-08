@@ -1,0 +1,15 @@
+node_modules
+dist
+dev-dist
+.vite
+*.local
+.DS_Store
+.cache
+hf-cache
+scripts/.cache
+coverage
+playwright-report
+test-results
+*.tsbuildinfo
+.env
+.vercel

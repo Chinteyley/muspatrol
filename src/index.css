@@ -1,0 +1,279 @@
+:root {
+  --bg: #08110e;
+  --bg-2: #10211a;
+  --card: #163027;
+  --card-2: #1d3c31;
+  --ink: #f3f6e8;
+  --muted: #9aa892;
+  --lime: #d6ff4a;
+  --lime-ink: #13210c;
+  --teal: #3ecfcf;
+  --warn: #ffb35c;
+  --line: rgba(214, 255, 74, 0.18);
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  --radius: 22px;
+  --font: "Segoe UI", system-ui, sans-serif;
+  --font-km: "Kantumruy Pro", "Noto Sans Khmer", "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font);
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(62, 207, 207, 0.16), transparent 50%),
+    radial-gradient(900px 400px at 110% 0%, rgba(214, 255, 74, 0.12), transparent 45%),
+    linear-gradient(180deg, #0b1712 0%, var(--bg) 40%, #06110d 100%);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+a {
+  color: var(--lime);
+}
+
+.app-shell {
+  width: min(520px, 100%);
+  margin: 0 auto;
+  min-height: 100dvh;
+  padding: 18px 16px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+}
+
+.mark {
+  width: 42px;
+  height: 42px;
+}
+
+.brand b {
+  display: block;
+  font-size: 1.15rem;
+  letter-spacing: -0.03em;
+}
+
+.brand small {
+  color: var(--muted);
+}
+
+.nav {
+  display: flex;
+  gap: 8px;
+}
+
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+
+.card {
+  background: linear-gradient(180deg, var(--card) 0%, #12261f 100%);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+.card h2,
+.card h1 {
+  margin: 0 0 8px;
+  letter-spacing: -0.03em;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.km {
+  font-family: var(--font-km);
+}
+
+.hero-title {
+  font-size: clamp(2rem, 8vw, 3.1rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  margin: 8px 0 12px;
+}
+
+.btn {
+  appearance: none;
+  border: 0;
+  border-radius: 18px;
+  padding: 16px 18px;
+  background: var(--lime);
+  color: var(--lime-ink);
+  font-weight: 700;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn.secondary {
+  background: var(--card-2);
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.btn.ghost {
+  background: transparent;
+  color: var(--lime);
+  border: 1px dashed var(--line);
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.row .btn {
+  flex: 1;
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.stat {
+  background: rgba(8, 17, 14, 0.35);
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.stat b {
+  display: block;
+  font-size: 1.4rem;
+}
+
+.choice {
+  width: 100%;
+  text-align: left;
+  background: var(--card-2);
+  color: var(--ink);
+  border: 1px solid transparent;
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.choice.active {
+  border-color: var(--lime);
+  box-shadow: inset 0 0 0 1px var(--lime);
+}
+
+.sample-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.sample-grid button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.sample-grid img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+.sample-grid span {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+.order {
+  text-align: center;
+  padding: 22px 16px 18px;
+}
+
+.order-word {
+  font-size: clamp(2.6rem, 12vw, 4.2rem);
+  letter-spacing: -0.06em;
+  line-height: 0.9;
+  margin: 8px 0 6px;
+  color: var(--lime);
+}
+
+.preview {
+  width: 100%;
+  max-height: 240px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.report {
+  white-space: pre-wrap;
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(214, 255, 74, 0.12);
+  color: var(--lime);
+  font-size: 0.78rem;
+  font-family: var(--mono);
+}
+
+.hidden-file {
+  display: none;
+}
+
+.credits li {
+  margin-bottom: 10px;
+}
+
+.footer-note {
+  color: var(--muted);
+  font-size: 0.85rem;
+}

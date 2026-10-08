@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: muspatrol
+    runtime: static
+    buildCommand: bun install --frozen-lockfile && bun run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
