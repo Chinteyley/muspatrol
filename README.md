@@ -8,7 +8,7 @@ Built **9–11 Oct 2026** for [DEV Hacktoberfest Open-Source AI Challenge Week 1
 
 ## Live demo
 
-`<!-- LIVE_DEMO_URL -->`
+**https://muspatrol.vercel.app** (static build of `main`, deployed on Vercel)
 
 Judges: tap **Try with sample photos**. No camera, no account, ~30 seconds. Photos are Wikimedia Commons (credits on About + `NOTICE.md`).
 
@@ -30,7 +30,7 @@ bun run dev            # http://localhost:5173
 bun run build && bun run preview
 ```
 
-Static host: `dist/` on Vercel or Render. See `vercel.json` and `render.yaml`. No backend.
+Static host: `dist/` on Vercel (live: https://muspatrol.vercel.app) or Render. See `vercel.json` and `render.yaml`. No backend.
 
 Optional on a WebGPU laptop: open a finished patrol and tap **Load Gemma & rewrite**. First download is **2,003,697,664 bytes** (HEAD of `gemma-4-E2B-it-web.task`). This repo does not vendor that file.
 
@@ -57,6 +57,8 @@ Does not (yet):
 - ElevenLabs voice lines
 - Render llama.cpp second-look
 - Native-speaker Khmer sign-off — `docs/khmer-review.md`
+
+DEV post (final, unpublished copy): [`docs/dev-week1-post.md`](docs/dev-week1-post.md).
 
 Measured numbers (no invented field stats): [`docs/numbers.md`](docs/numbers.md).
 

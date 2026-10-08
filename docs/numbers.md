@@ -70,3 +70,16 @@ That is why the picker exists. A judge can still complete the loop: tap the righ
 ## Open-Meteo
 
 Live fetch from `api.open-meteo.com` for 11.5564, 104.9282 (Phnom Penh). Cached in IndexedDB. Last-3h rain is summed from hourly `precipitation` in code (`rainLast3h`); unit-tested. A live millimetre reading depends on the day you open the app — we do not freeze a fake one here.
+
+## Re-run, 9 Oct 2026 (deploy day)
+
+Different agent VM (Linux, x86_64, no GPU, Node v20.19.2, Bun 1.4.2, Google Chrome headless, no WebGPU). Same code, same 10 photos.
+
+| What | Value | Where I read it |
+|---|---|---|
+| `bun run test` | 11 / 11 tests pass (3 files) | vitest output |
+| `bun run build` | precache 28 entries (1,096.50 KiB); same 26,861,777-byte ONNX Runtime WASM | Vite / workbox log |
+| Screenshots regenerated (`scripts/screenshots.mjs` vs local `vite preview`) | “CLIP ready in 7,894 ms”; `bucket.jpg` classify 726 ms | UI strings in `docs/screenshots/` |
+| Live smoke test against https://muspatrol.vercel.app (headless Chrome, judge mode, first sample) | “CLIP ready in 8,092 ms”; top-3 = bucket 0.31 / water jar 0.30 / pet bowl 0.27 → TIP + SCRUB; 0 console errors | puppeteer script, UI strings |
+
+CLIP load time depends heavily on network and CPU (the 8 Oct VM took 26–28 s; this one took ~8 s). None of this is a phone number.
